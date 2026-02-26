@@ -1,14 +1,11 @@
 import { useEffect, useState } from "react";
+import type { Documents } from "./model/Document";
 
-type Document = {
-  id: string;
-  title: string;
-  s3Key: string;
-};
+
 
 function App() {
   const [file, setFile] = useState<File | null>(null);
-  const [documents, setDocuments] = useState<Document[]>([]);
+  const [documents, setDocuments] = useState<Documents[]>([]);
   const [loading, setLoading] = useState(false);
 
   const fetchDocuments = async () => {
