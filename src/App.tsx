@@ -65,7 +65,7 @@ function App() {
   return (
     <div style={{ padding: 40 }}>
       <h1>DocBox</h1>
-
+      <h2>פורים שמח!</h2>
       <input
         type="file"
         onChange={(e) => setFile(e.target.files?.[0] || null)}
